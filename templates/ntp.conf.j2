@@ -47,4 +47,9 @@ broadcastclient
 
 {% if ntp_multicastclient %}
 multicastclient {{ ntp_multicastclient }}
-{% endif %}   
+{% endif %}
+
+{% if ntp_disable_monitor %}
+disable monitor
+{% endif %}
+
